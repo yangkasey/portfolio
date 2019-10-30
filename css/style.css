@@ -630,7 +630,11 @@ a {
     left: 150px;
   }
   label{
-    font-family: Cursive;
+    font-family: 'Playfair Display', serif;
+  }
+
+  label, input {
+    margin-bottom: 20px;
   }
 
   input:focus{
@@ -639,7 +643,8 @@ a {
 
   fieldset{
     width: 50%;
-    border: solid 2px black;
+    margin-left: 50px;
+    margin-top: 50px;
   }
 
   input[type=submit] {
@@ -656,6 +661,11 @@ a {
   form{
     margin-bottom: 100px;
   }
+
+  legend h1 {
+    padding-bottom: 20px;
+  }
+
 
   /*********** IMAGE CENTER **********/
   .center {
