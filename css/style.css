@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #2F4550;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/************ SKIP TO CONTENT ************/
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus {
+  top: 0;
+}
+
+/************ FOOTER ************/
+
+footer {
+  background-color: #586F7C;
+  color: white;
+  min-height: 100px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+}
+
+footer a {
+  color: #B8DBD9;
+}
+
+/******** PARTICLES JS ********/
+
+#particles-js {
+	width: 100%;
+/*	height: 30vh;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #B8DBD9;
+}
+
+.particles-js-canvas-el {
+	position: absolute;
+  max-height: 30vh;
+}
+
+/************ HORIZONTAL LINE ************/
+
+hr {
+width: 90%;
+height: 3px;
+margin-left: auto;
+margin-right: auto;
+background-color:#eee;
+border: 0 none;
+margin-top: 50px;
+margin-bottom:50px;
+}
+
+/************ IMAGE CENTER ************/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 100%;
+}
+
+/************ NAVIGATION ************/
+
+* {
+	box-sizing: border-box;
+}
+
+.logo {
+	margin: 0;
+	font-size: 20px;
+  color: #2F4550;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+  color: #2F4550;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #B8DBD9;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.current {
+  background-color: #B8DBD9;
+}
+
+/************ PORTFOLIO GALLERY ************/
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 600px repeat(4, 1fr) 30px;
+    grid-gap: 15px;
+  } 
+
+  .gallery_text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 10px;
+    margin-right: 50px;
+    color: #586F7C;
+  }
+
+  .gallery_text h1 {
+    font-size: 1.5em;
+    padding-bottom: 30px;
+  }
+
+  .gallery_text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  .gallery_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery_item_1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .gallery_item_2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .gallery_item_3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .gallery_item_4 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+
+/************ ABOUT ME PAGE ************/
+
+.about_text h1 {
+  padding: 50px 50px 0px 50px;
+  font-size: 30px;
+}
+
+.about_text p {
+  padding: 50px 50px 50px 50px;
+}
+
+.about_image {
+  width: 100%;
+  height: auto;
+}
+
+/************ PAGE CONTAINER ************/
+
+.page-container {
+  display: grid;
+  grid-template-rows: 400px 1fr 50px;
+  grid-template-columns: 20px 1fr 20px;
+}
+
+/************ READING PAGE ************/
+
+#reading-display {
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/reading_display.jpg");      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.page-text{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.screen-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 500vh;
+  justify-content: center;
+  align-items: center;
+}
+.screen-gallery img {
+  margin: 10px;
+    border: 1px solid #eee;
+  max-width: 300px;
+}
+
+/************ OPTIMIZE GALLERY ************/
+
+  #optimize-display {
+    background-attachment: fixed;
+    background-image: url("../images/optimize_display.png");      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;       
+    color: white;
+    height: 400px;                
+
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+  }
+
+  .logo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 10px;
+  }
+
+  .logo-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logo-item-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .logo-item-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .logo-item-3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .logo-item-4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .logo-item-5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .logo-item-6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .logo-item-1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .logo-item-1 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .logo-item-1 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
+/************ CALENDAR PAGE ************/
+  #calendar-display {
+    background-attachment: fixed; /* Parallax effect */
+    background-image: url("../images/vim_calendar_display.jpg");      /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .calendar-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 600vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .calendar-gallery img {
+    margin: 15px;
+    border: 1px solid #eee;
+    max-width: 60vh;
+  }
+
+/************ MEDIA QUERY: TABLET ************/
+  @media only screen and (min-width: 768px) {
+  
+  .current {
+  border-bottom: 2px solid #B8DBD9;
+  background-color: transparent;
+  }
+
+  .header,
+  .main-nav {
+    display: flex;
+    padding-right: 30px;
+  }
+
+  .page-container {
+    display: grid;
+    grid-template-rows: 400px 1fr 50px;
+    grid-template-columns: 50px 1fr 50px;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  }
+
+/************ MEDIA QUERY: COMPUTER ************/
+
+@media only screen and (min-width: 1025px) {
+	
+  .header,
+  .main-nav {
+    display: flex;
+    padding-right: 30px;
+  }
+
+  .page-container {
+    display: grid;
+    grid-template-rows: 400px 1fr 50px;
+    grid-template-columns: 50px 1fr 50px;
+  }
+
+  .header {
+		flex-direction: row;
+		justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+	}
+
+  /************ PORTFOLIO GALLERY ************/
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 50px auto 15px auto 50px;
+    grid-template-rows: 220px auto 15px auto 50px;
+    grid-gap: 0px;
+  } 
+
+  .gallery_text {
+    color: black;
+    text-align: left;
+    grid-column: 2/5;
+    grid-row: 1/2;
+    padding-top: 50px;
+    margin-right: 400px;
+    color: #586F7C;
+  }
+
+  .gallery_text h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2em;
+    padding-bottom: 30px;
+  }
+
+  .gallery_text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  .gallery_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery_item_1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .gallery_item_2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  .gallery_item_3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .gallery_item_4 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+
+  /******** PARTICLES JS ********/
+
+  #particles-js {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B8DBD9;
+  }
+
+  .particles-js-canvas-el {
+    position: absolute;
+    max-height: 400px;
+  }
+
+  /************ READING PAGE ************/
+
+  #reading-display {
+    background-attachment: fixed; /* Parallax effect */
+    background-image: url("../images/reading_display.jpg");      /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .page-text{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .screen-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 500vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .screen-gallery img {
+    margin: 10px;
+    border: 1px solid #eee;
+    max-width: 250px;
+  }
+
+  /************ OPTIMIZE PAGE ************/
+
+  #optimize-display {
+    background-attachment: fixed; /* Parallax effect */
+    background-image: url("../images/optimize_display.png");      /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .logo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+    grid-gap: 10px;
+  }
+
+  .logo-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logo-item-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .logo-item-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .logo-item-3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .logo-item-4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .logo-item-5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .logo-item-6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .logo-item-1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .logo-item-1 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .logo-item-1 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
+  /************ FODMAPPA PAGE ************/
+  #fodmappa-display {
+    background-attachment: fixed; /* Parallax effect */
+    background-image: url("../images/fodmappa_display.png");      /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .calendar-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 600vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .calendar-gallery img {
+    margin: 15px;
+    border: 1px solid #eee;
+    max-width: 60vh;
+  }
+
+  /************ CONTACT FORM ************/
+
+    input{
+    width: 35%;
+    position: absolute;
+    left: 150px;
+  }
+  label{
+    font-family: Cursive;
+  }
+
+  input:focus{
+    background-color:lightgrey;
+  }
+
+  fieldset{
+    width: 50%;
+    border: solid 2px black;
+  }
+
+  input[type=submit] {
+    margin-top:25px;
+      padding:5px 15px; 
+      background:#4a89c3; 
+      border:2px solid lightgrey;
+      cursor:pointer;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; 
+      color:white;
+  }
+
+  form{
+    margin-bottom: 100px;
+  }
+
+  /*********** IMAGE CENTER **********/
+  .center {
+    width: 50%;
+  }
+
+
+}
+
