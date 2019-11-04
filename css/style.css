@@ -145,7 +145,7 @@ a {
   .gallery {
     display: grid;
     grid-template-columns: 20px auto 20px;
-    grid-template-rows: 600px repeat(4, 1fr) 30px;
+    grid-template-rows: 200px repeat(4, 1fr) 30px;
     grid-gap: 15px;
   } 
 
