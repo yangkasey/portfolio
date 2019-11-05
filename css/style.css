@@ -19,6 +19,15 @@ p {
   font-size: 16px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
 /************ SKIP TO CONTENT ************/
 .skip a{
   background: white;
@@ -45,6 +54,7 @@ footer {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   line-height: 2;
+  flex-shrink: 0;
 }
 
 footer a {
@@ -272,15 +282,15 @@ a {
 
   .logo-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
     grid-gap: 10px;
   }
 
   .logo-item {
-    max-width: 100px;
-    height: auto;
-/*    object-fit: cover;*/
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
   }
 
   .logo-item-1 {
