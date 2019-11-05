@@ -272,15 +272,15 @@ a {
 
   .logo-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
     grid-gap: 10px;
   }
 
   .logo-item {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100px;
+    height: auto;
+/*    object-fit: cover;*/
   }
 
   .logo-item-1 {
@@ -552,12 +552,6 @@ a {
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(3, 300px);
     grid-gap: 10px;
-  }
-
-  .logo-item {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
   .logo-item-1 {
