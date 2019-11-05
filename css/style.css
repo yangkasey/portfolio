@@ -288,8 +288,7 @@ a {
   }
 
   .logo-item {
-    width: 200px;
-    height: 200px;
+    max-width: 100%;
     object-fit: cover;
   }
 
@@ -367,6 +366,50 @@ a {
     max-width: 60vh;
   }
 
+/************ CONTACT FORM ************/
+
+  input{
+    width: 35%;
+    position: absolute;
+    left: 150px;
+  }
+  label{
+    font-family: 'Playfair Display', serif;
+  }
+
+  label, input {
+    margin-bottom: 20px;
+  }
+
+  input:focus{
+    background-color:lightgrey;
+  }
+
+  fieldset{
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  input[type=submit] {
+    margin-top:25px;
+    padding:5px 15px; 
+    background:#4a89c3; 
+    border:2px solid lightgrey;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    color:white;
+  }
+
+  form{
+    margin-bottom: 100px;
+  }
+
+  legend h1 {
+    padding-bottom: 20px;
+  }
+
 /************ MEDIA QUERY: TABLET ************/
   @media only screen and (min-width: 768px) {
   
@@ -401,6 +444,73 @@ a {
     align-items: center;
     width: 100%;
     margin: 0 auto;
+  }
+
+    /************ OPTIMIZE PAGE ************/
+
+  #optimize-display {
+    background-attachment: fixed; /* Parallax effect */
+    background-image: url("../images/optimize_display.png");      /* Your code here - Link to header.jpg in the images folder */
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .logo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 10px;
+  }
+
+  .logo-item-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .logo-item-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .logo-item-3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .logo-item-4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .logo-item-5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .logo-item-6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .logo-item-1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .logo-item-1 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .logo-item-1 {
+    grid-column: 3/4;
+    grid-row: 3/4;
   }
 
   }
@@ -542,73 +652,6 @@ a {
     max-width: 250px;
   }
 
-  /************ OPTIMIZE PAGE ************/
-
-  #optimize-display {
-    background-attachment: fixed; /* Parallax effect */
-    background-image: url("../images/optimize_display.png");      /* Your code here - Link to header.jpg in the images folder */
-    background-position: center;  /* Parallax effect */
-    background-repeat: no-repeat; /* Parallax effect */
-    background-size: cover;       /* Parallax effect */
-    color: white;
-    height: 400px;                /* Parallax effect */
-
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .logo-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px);
-    grid-gap: 10px;
-  }
-
-  .logo-item-1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .logo-item-2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .logo-item-3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-
-  .logo-item-4 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-
-  .logo-item-5 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  .logo-item-6 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-
-  .logo-item-1 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-
-  .logo-item-1 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
-  .logo-item-1 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-
   /************ FODMAPPA PAGE ************/
   #fodmappa-display {
     background-attachment: fixed; /* Parallax effect */
@@ -640,48 +683,9 @@ a {
 
   /************ CONTACT FORM ************/
 
-    input{
-    width: 35%;
-    position: absolute;
-    left: 150px;
-  }
-  label{
-    font-family: 'Playfair Display', serif;
-  }
-
-  label, input {
-    margin-bottom: 20px;
-  }
-
-  input:focus{
-    background-color:lightgrey;
-  }
-
   fieldset{
     width: 50%;
-    margin-left: 50px;
-    margin-top: 50px;
   }
-
-  input[type=submit] {
-    margin-top:25px;
-      padding:5px 15px; 
-      background:#4a89c3; 
-      border:2px solid lightgrey;
-      cursor:pointer;
-      -webkit-border-radius: 5px;
-      border-radius: 5px; 
-      color:white;
-  }
-
-  form{
-    margin-bottom: 100px;
-  }
-
-  legend h1 {
-    padding-bottom: 20px;
-  }
-
 
   /*********** IMAGE CENTER **********/
   .center {
