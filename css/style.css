@@ -39,7 +39,7 @@ p {
 
 footer {
   background-color: #586F7C;
-  color: white;
+  color: #F4F4F9;
   min-height: 100px;
   padding-top: 20px;
   text-align: center;
@@ -48,7 +48,8 @@ footer {
 }
 
 footer a {
-  color: #B8DBD9;
+  color: #F4F4F9;
+  text-decoration: underline;
 }
 
 /******** PARTICLES JS ********/
@@ -369,6 +370,13 @@ a {
     display: flex;
     padding-right: 30px;
   }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    grid-template-rows: 150px repeat(4, 1fr) 30px;
+    grid-gap: 15px;
+  } 
 
   .page-container {
     display: grid;
