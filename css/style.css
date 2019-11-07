@@ -366,6 +366,20 @@ a {
     max-width: 60vh;
   }
 
+/************ FODMAPPA PAGE ************/
+#fodmappa-display {
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/fodmappa_display.png");      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
 /************ CONTACT FORM ************/
 
   input{
@@ -687,13 +701,6 @@ a {
 
   /************ FODMAPPA PAGE ************/
   #fodmappa-display {
-    background-attachment: fixed; /* Parallax effect */
-    background-image: url("../images/fodmappa_display.png");      /* Your code here - Link to header.jpg in the images folder */
-    background-position: center;  /* Parallax effect */
-    background-repeat: no-repeat; /* Parallax effect */
-    background-size: cover;       /* Parallax effect */
-    color: white;
-    height: 400px;                /* Parallax effect */
 
     grid-column: 2/3;
     grid-row: 1/2;
