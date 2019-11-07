@@ -183,10 +183,6 @@ a {
     object-fit: cover;
   }
 
-  .gallery_img:hover {
-    transform: rotateY(180deg);
-  }
-
   .gallery_item_1 {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -206,6 +202,8 @@ a {
     grid-column: 2/3;
     grid-row: 5/6;
   }
+
+
 /************ ABOUT ME PAGE ************/
 
 .about_text h1 {
@@ -220,6 +218,38 @@ a {
 .about_image {
   width: 100%;
   height: auto;
+}
+
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
 }
 
 /************ PAGE CONTAINER ************/
