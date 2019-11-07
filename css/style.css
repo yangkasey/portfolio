@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 body, html {
-	font-family: 'Open Sans', sans-serif;
-	height: 100%;
-	width: 100%;
-	position: relative;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 h1, h2 {
@@ -65,15 +65,15 @@ footer a {
 /******** PARTICLES JS ********/
 
 #particles-js {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #B8DBD9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #B8DBD9;
 }
 
 .particles-js-canvas-el {
-	position: absolute;
+  position: absolute;
   max-height: 30vh;
 }
 
@@ -102,48 +102,48 @@ margin-bottom:50px;
 /************ NAVIGATION ************/
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .logo {
-	margin: 0;
-	font-size: 20px;
+  margin: 0;
+  font-size: 20px;
   color: #2F4550;
 }
 
 .main-nav {
-	margin-top: 5px;
+  margin-top: 5px;
 
 }
 .logo a,
 .main-nav a {
-	padding: 10px 15px;
-	text-align: center;
-	display: block;
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
   color: #2F4550;
 }
 
 .main-nav a {
-	color: #34495e;
-	font-size: .99em;
+  color: #34495e;
+  font-size: .99em;
 }
 
 .main-nav a:hover {
-	color: #B8DBD9;
+  color: #B8DBD9;
 }
 
 .header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	background-color: #fff;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background-color: #fff;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .current {
@@ -551,7 +551,7 @@ a {
 /************ MEDIA QUERY: COMPUTER ************/
 
 @media only screen and (min-width: 1025px) {
-	
+  
   .header,
   .main-nav {
     display: flex;
@@ -565,13 +565,13 @@ a {
   }
 
   .header {
-		flex-direction: row;
-		justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     width: 100%;
     margin: 0 auto;
-	}
+  }
 
   .gallery_text {
     color: black;
