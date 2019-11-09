@@ -815,4 +815,8 @@ a {
   .skip a:focus{
     top:0;
   }
+
+  .flip-card:hover .flip-card-inner {
+  transform: none;
+}
 }
