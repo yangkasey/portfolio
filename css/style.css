@@ -808,7 +808,7 @@ a {
     position: absolute;
     top: -40px;
     -webkit-transition: none !important;
-    transition: default; /* Your code here - set to default setting */
+    transition: default; 
     z-index: 1;
   }
 
@@ -818,5 +818,14 @@ a {
 
   .flip-card:hover .flip-card-inner {
   transform: none;
+  }
+
+  .tracking-in-contract {
+    -webkit-animation: none !important;
+  }
+
+  .particles-js-canvas-el {
+    display: none;
+  }
 }
 }
